@@ -5,16 +5,14 @@
 </div>
 
 
-<div class="card-category m-3" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/breakfast.jpg)">
-  <ul>
-    <% @lists.each do |list| %>
-      <li>
-        <%= link_to list_path(list) do %>
-        <%= list.name %>
+<div class="cards m-3">
+  <% @lists.each do |list| %>
+    <div class="card-category m-3" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://www.shutterstock.com/image-vector/cinema-film-strip-wave-reel-600w-1422026513.jpg)">
+      <%= link_to list_path(list) do %>
+      <%= list.name %>
       <% end %>
-      </li>
     <% end %>
-  </ul>
+    </div>
 </div>
 
 
