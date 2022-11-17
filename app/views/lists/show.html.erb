@@ -2,4 +2,11 @@
 
 <p><%= @list.name %></p>
 
+<% @list.bookmarks.each do |bookmark|%>
+  <p><%= bookmark.movie.title %></p>
+  <p><%= bookmark.comment %></p>
+<% end %>
+
 <%= link_to "Back to 'All Lists'", lists_path %>
+
+<%# acrescentar um botaão para New Movie (nova bookmark) reencaminhar para a bookmarks(new)  %>
