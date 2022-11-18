@@ -1,12 +1,27 @@
-<h1>Lists</h1>
+<div class="container">
+  <div class="row justify-content-center">
+  <div class="col-8">
+    <h1><%= @list.name %></h1>
 
-<p><%= @list.name %></p>
+    <%= link_to "Back to 'All Lists'", lists_path %>
 
-<% @list.bookmarks.each do |bookmark|%>
-  <p><%= bookmark.movie.title %></p>
-  <p><%= bookmark.comment %></p>
-<% end %>
+    <div class="mt-5">
+    <%= link_to "Add a movie!", new_list_bookmark_path(@list), class: "btn btn-primary mb-2" %>
+    </div>
 
-<%= link_to "Back to 'All Lists'", lists_path, class: "mt-5 btn btn-primary text-decoration-none" %>
+    <% @list.bookmarks.each do |bookmark|%>
+      <div class="card-trip mt-2">
+        <img src="<%= bookmark.movie.poster_url %>" />
+        <div class="card-trip-infos">
+          <div>
+            <h2><%= bookmark.movie.title %></h2>
+            <p><%= bookmark.comment %></p>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+  </div>
+</div>
 
 <%# acrescentar um botaão para New Movie (nova bookmark) reencaminhar para a bookmarks(new)  %>
