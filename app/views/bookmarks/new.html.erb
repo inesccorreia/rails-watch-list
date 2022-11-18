@@ -1,3 +1,4 @@
+<div class="row justify-content-center">>
 <h1>New Bookmark: </h1>
 
 <%= simple_form_for [@list, @bookmark] do |f| %>
@@ -6,4 +7,7 @@
   <%= f.button :submit, class: "btn btn-primary"%>
 <% end %>
 
-<%= link_to "Back to 'All Lists'", lists_path %>
+</div>
+
+<%= link_to "Add a Bookmark", new_list_bookmark_path, class: "mt-5 btn btn-primary text-decoration-none" %>
+<%= link_to "Back to 'All Lists'", lists_path, class: "mt-5 btn btn-primary text-decoration-none"%>

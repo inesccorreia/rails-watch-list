@@ -4,16 +4,18 @@
   </div>
 </div>
 
+<div class= "position-relative">
 
-<div class="cards m-3">
-  <% @lists.each do |list| %>
-    <div class="card-category m-3" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://www.shutterstock.com/image-vector/cinema-film-strip-wave-reel-600w-1422026513.jpg)">
-      <%= link_to list_path(list) do %>
-      <%= list.name %>
-      <% end %>
-    <% end %>
-    </div>
+<%= link_to "New List", new_list_path, class: "btn btn-primary mt-3 me-4 position-absolute top-0 end-0" %>
 </div>
 
-
-<%= link_to "New List", new_list_path %>
+<div class="cards m-3 pt-5">
+  <% @lists.each do |list| %>
+    <div class="card-category m-3 position-relative" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://upload.wikimedia.org/wikipedia/commons/0/02/35mm_movie_negative.jpg)">
+      <%= link_to list_path(list), class: "text-decoration-none text-light" do %>
+      <%= list.name %>
+      <%= link_to "X", list_path(list), data: { turbo_method: :delete, turbo_confirm: "Are you sure?" }, class: "close-btn text-decoration-none text-light"  %>
+      <% end %>
+    </div>
+    <% end %>
+</div>
