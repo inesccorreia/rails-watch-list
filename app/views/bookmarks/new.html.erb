@@ -1,14 +1,14 @@
 <div class="container">
+  <%= link_to "Back to 'My Lists'", lists_path %>
   <div class="row justify-content-center">
-  <div class="col-8">
-    <h1>New Bookmark: </h1>
-    <%= link_to "Back to 'All Lists'", lists_path %>
+    <div class="col-8">
+      <h1>Create new bookmark: </h1>
     <%= simple_form_for [@list, @bookmark] do |f| %>
       <%= f.input :comment %>
+      <%= f.input :photo, as: :file %>
       <%= f.association :movie %>
       <%= f.button :submit, class: "btn btn-primary"%>
     <% end %>
-
     </div>
   </div>
 </div>
