@@ -1,4 +1,4 @@
-# Watch List
+# Watch List app
 
 This project was creating during an intensive Web Developement bootcamp (full-time) at Le Wagon Lisbon, Portugal.
 
