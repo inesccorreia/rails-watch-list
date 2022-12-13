@@ -1,24 +1,11 @@
-# README
+# Watch List
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This project was creating during an intensive Web Developement bootcamp (full-time) at Le Wagon Lisbon, Portugal.
 
-Things you may want to cover:
+It's a 3-model app, a many to many relationship (N:N).
 
-* Ruby version
+This app would allow you to create lists in which you could save your favourite movies.
 
-* System dependencies
+It was build on Ruby on Rails with HTML, CSS and Bootstrap.
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+The link was available at https://watchmovieseveryday.herokuapp.com/
