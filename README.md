@@ -1,6 +1,6 @@
-# Watch List app
+# Watch Movies Everyday app
 
-This project was creating during an intensive Web Developement bootcamp (full-time) at Le Wagon Lisbon, Portugal.
+The Watch List project was creating during an intensive Web Developement bootcamp (full-time) at Le Wagon Lisbon, Portugal. It was a part of the Ruby on Rails frontend module.
 
 It's a 3-model app, a many to many relationship (N:N).
 
