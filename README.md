@@ -9,3 +9,4 @@ This app would allow you to create lists in which you could save your favourite 
 It was build with Ruby on Rails, postgresql database, HTML5, CSS and Bootstrap. This app would not allow users to create movies so we had to generate a static seed of movies to choose from.
 
 The link was available at https://watchmovieseveryday.herokuapp.com/
+
